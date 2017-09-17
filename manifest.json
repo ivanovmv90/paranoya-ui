@@ -7,8 +7,7 @@
     "content_scripts": [
         {
             "matches": [ "http://pqpqpq.ru/admin/*"],
-            "css": ["style.css"],
-            "js":["jquery.js", "script.js"]
+            "js":["jquery.js"]
         }
     ],
     "icons": {
@@ -21,5 +20,11 @@
     "browser_action": {
         "default_icon": "off.png",
         "default_title": "Make it beautiful"
-    }
+    },
+    "permissions": [
+        "tabs",
+        "notifications",
+        "http://*/",
+        "https://*/"
+    ]
 }
