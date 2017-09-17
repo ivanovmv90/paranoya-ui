@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "Paranoya UI design",
+    "version": "1.0",
+    "description":"Demo plugin",
+    "content_scripts": [
+        {
+            "matches": [ "http://pqpqpq.ru/admin/*"],
+            "css": ["style.css"],
+            "js":["jquery.js", "script.js"]
+        }
+    ],
+    "icons": {
+        "128": "icon.png",
+        "16": "icon_16.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "off.png",
+        "default_title": "Make it beautiful"
+    }
+}
