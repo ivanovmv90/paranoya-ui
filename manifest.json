@@ -7,7 +7,8 @@
     "content_scripts": [
         {
             "matches": [ "http://pqpqpq.ru/admin/*"],
-            "js":["jquery.js"]
+            "js":["jquery.js"],
+            "run_at": "document_end"
         }
     ],
     "icons": {
@@ -24,7 +25,8 @@
     "permissions": [
         "tabs",
         "notifications",
-        "http://*/",
-        "https://*/"
+        "http://pqpqpq.ru/*/",
+        "https://pqpqpq.ru/*/",
+        "storage"
     ]
 }
